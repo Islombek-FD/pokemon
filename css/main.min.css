@@ -1,0 +1,139 @@
+body {
+  padding-top: 100px;
+}
+
+.list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.list__item {
+  position: relative;
+}
+
+.list__item-visuall {
+  width: 100%;
+  padding: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+}
+
+.list__item:hover .list__item-hidden {
+  display: block;
+}
+
+.item__num {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: red;
+}
+
+.item__number {
+  color: #444;
+}
+
+.item__name {
+  margin-top: 0;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: green;
+}
+
+.item__img {
+  width: 160px;
+  height: 160px;
+  vertical-align: middle;
+}
+
+.list__item-hidden {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 8px;
+  display: none;
+  width: 95%;
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: orange;
+  border-radius: 6px;
+}
+
+.list__item-hidden p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list__item-hidden ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item-hidden span, .list__item-hidden time {
+  color: white;
+}
+
+.list__item-hidden li {
+  color: white;
+}
+
+.list__item-hidden li + li {
+  margin-left: 10px;
+}
+
+.item__type, .item__namemultipliers {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer {
+  background-color: #17206a;
+}
+
+.footer__item + .footer__item {
+  margin-top: 10px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer__link:hover {
+  color: orange;
+}
+
+.footer__icon {
+  margin-right: 8px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+}
+
+.navbar--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.min.css.map */

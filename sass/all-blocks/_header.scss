@@ -1,0 +1,14 @@
+// HEADER styles
+.header {   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+}
+
+.navbar--flex {
+    display: flex;
+}

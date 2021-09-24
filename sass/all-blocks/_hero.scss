@@ -1,0 +1,89 @@
+// HERO SECTION styles
+.list {
+    @extend %reset-list;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.list__item {
+    position: relative;
+}
+
+.list__item-visuall {
+    width: 100%;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+}
+
+.list__item:hover .list__item-hidden {
+    display: block;
+}
+
+.item__num {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+.item__number {
+    color: #444;
+}
+
+.item__name {
+    margin-top: 0;
+    margin-bottom: 20px;
+    @extend %text-overflow;
+    color: green;
+}
+
+.item__img {
+    width: 160px;
+    height: 160px;
+    vertical-align: middle;
+}
+
+
+// LIST VISAULL HIDDEN styles
+.list__item-hidden {
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 8px;
+    display: none;
+    width: 95%;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: orange;
+    border-radius: 6px;
+
+    & p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & ul {
+        display: inline-flex;
+        @extend %reset-list;
+    }
+
+    & span, & time {
+        color: white;
+    }
+
+    & li {
+        color: white;
+    }
+
+    & li + li {
+        margin-left: 10px;
+    }
+}
+
+.item__type, .item__namemultipliers {
+    display: inline-block;
+    margin-right: 5px;
+}

@@ -1,0 +1,22 @@
+// FOOTER styles
+.footer {
+    background-color: #17206a;
+}
+
+.footer__item + .footer__item {
+    margin-top: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+    @extend %transition;
+
+    &:hover {
+        color: orange;
+    }
+}
+
+.footer__icon {
+    margin-right: 8px;
+}

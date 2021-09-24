@@ -1,0 +1,19 @@
+%reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+%transition {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+%text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
