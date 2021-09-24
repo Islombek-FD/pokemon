@@ -15,7 +15,7 @@ for (var pokemon of pokemons) {
     var elPokemonName = document.createElement('h3');
     elPokemonName.setAttribute('class', 'item__name');
     var elPokemonImg = document.createElement('img');
-    elPokemonImg.setAttribute('class', 'item__img');
+    elPokemonImg.setAttribute('class', 'item__img w-75 w-sm-100');
     
     // Hidden 
     var elPokemonItemHidden = document.createElement('div');
